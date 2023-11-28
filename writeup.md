@@ -20,6 +20,7 @@ There were 4 main steps during this project:
 To evaluate the performance of these NNs, I calculated the accuracy and loss of each epoch during training. Below are images of the graphs of accuracy and loss for each of the 6 programs.
 
 **Ann_main_binary:**
+
 ![binary_loss](https://github.com/22kollasiddarth/ann/assets/34851034/1c2c57b5-10df-46e6-83a2-6a7393020ab6)
 
 
