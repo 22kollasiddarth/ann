@@ -20,15 +20,17 @@ classes include cats, dogs, rhinos, and giraffes.
 **c. ann_main_cifar:** utilizes image classification model from ann_main_general for a more rigorous and
 complex dataset, CIFAR-10 (created by the Department of CS at the University of Toronto).
 
-**d. ann_main_debris_2:** This program is 1 of 3 programs that apply the NN from ann_main_general for
+**d. ann_main_debris:** This program is 1 of 3 programs that apply the NN from ann_main_general for
 industry-related applications. Ann_main_debris is used for debris detection, where the NN can classify
 different forms of space debris, including payload fairings and rocket stages.
 
-**e. ann_main_satellite_parts_2:** This program applies the NN for satellite component detection, including
+**e. ann_main_satellite_parts:** This program applies the NN for satellite component detection, including
 detecting solar panels and deployable booms.
 
-**f. ann_main_asteroids_2:** This is the final industry-specific NN program, and it applies the created NN to
+**f. ann_main_asteroids:** This is the final industry-specific NN program, and it applies the created NN to
 classify asteroid images as m-type, s-type, or c-type.
+
+**g. writeup.md:** This file contains results, discussion, and analysis of the project. 
 
 # **3. How to Run**
 Each of the 6 programs listed above requires specific images for the validation, testing, and training
