@@ -22,22 +22,27 @@ To evaluate the performance of these NNs, I calculated the accuracy and loss of 
 **Ann_main_binary:**
 
 ![binary_loss](https://github.com/22kollasiddarth/ann/assets/34851034/1c2c57b5-10df-46e6-83a2-6a7393020ab6)
-
+![binary_accuracy](https://github.com/22kollasiddarth/ann/assets/34851034/01caaea9-a140-49b5-b596-9d5b53546dea)
 
 **Ann_main_general:**
-[images]
+![general_loss](https://github.com/22kollasiddarth/ann/assets/34851034/6f665198-a42b-4f1f-b41a-cfbcfabaad1a)
+![general_accuracy](https://github.com/22kollasiddarth/ann/assets/34851034/a8f4a0cc-37fd-454a-8849-e5120f1305d5)
 
 **Ann_main_cifar:**
-[images]
+![cifar_loss](https://github.com/22kollasiddarth/ann/assets/34851034/5b92e135-b2a2-4dee-b4a9-b66c89fadd9d)
+![cifar_accuracy](https://github.com/22kollasiddarth/ann/assets/34851034/c4274c7b-8c86-44cc-bb97-e3f67dabcb9f)
 
 **Ann_debris:**
-[images]
+![debris_loss](https://github.com/22kollasiddarth/ann/assets/34851034/7ac87017-d801-43e9-a475-b85c01a441c8)
+![debris_accuracy](https://github.com/22kollasiddarth/ann/assets/34851034/5790dacf-b26a-4fd8-b593-8a59a24fa9fb)
 
 **Ann_satellite_parts:**
-[images]
+![satellite_loss](https://github.com/22kollasiddarth/ann/assets/34851034/343d55f4-6b2e-42a9-ae8d-35bdb0c0e89b)
+![satellite_accuracy](https://github.com/22kollasiddarth/ann/assets/34851034/d5971936-ee66-4711-995a-bf3db81bd13a)
 
 **Ann_asteroids:**
-[images]
+![asteroid_loss](https://github.com/22kollasiddarth/ann/assets/34851034/b956a982-aff0-4abf-97a1-81b2c4f3c3cf)
+![asteroid_accuracy](https://github.com/22kollasiddarth/ann/assets/34851034/91c000c0-f908-4fa2-8e75-1c063d2c05b7)
 
 # Analysis/Discussion:
 The accuracy for the binary classifier was quite high, scoring between 95-100% for the validation and training accuracy at the end of 20 epochs. Similar results were achieved for the multiclass image classifier (with animal images), with the training and validation accuracies scoring around the 90-100% range for the final epoch. These high accuracies are seen in lower loss values as well. These results were pretty expected, as each class is relatively distinct, and the Google Image datasets were pretty accurate with having the right animals in each folder. 
