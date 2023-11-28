@@ -18,26 +18,37 @@ There were 4 main steps during this project:
 
 # Results:
 To evaluate the performance of these NNs, I calculated the accuracy and loss of each epoch during training. Below are images of the graphs of accuracy and loss for each of the 6 programs.
-Ann_main_binary:
-[images]
-Ann_main_general:
-[images]
-Ann_main_cifar:
-[images]
-Ann_debris:
-[images]
-Ann_satellite_parts:
-[images]
-Ann_asteroids:
+
+**Ann_main_binary:**
 [images]
 
-Analysis/Discussion:
+**Ann_main_general:**
+[images]
+
+**Ann_main_cifar:**
+[images]
+
+**Ann_debris:**
+[images]
+
+**Ann_satellite_parts:**
+[images]
+
+**Ann_asteroids:**
+[images]
+
+# Analysis/Discussion:
 The accuracy for the binary classifier was quite high, scoring between 95-100% for the validation and training accuracy at the end of 20 epochs. Similar results were achieved for the multiclass image classifier (with animal images), with the training and validation accuracies scoring around the 90-100% range for the final epoch. These high accuracies are seen in low loss values as well. These results were pretty expected, as each class is relatively distinct, and the Google Image datasets were pretty accurate with having the right animals in each folder. 
+
 The CIFAR NN classifier followed similar patterns as the binary and multiclass image classifiers but did not achieve as high of an accuracy and had more loss at the end of training. This could be due to many reasons, including the fact that there are many more classes, and the images are more downsized in resolution. To compensate for this, I tried adding complexity to the NN, and this helped increase accuracy to a certain extent. 
+
 The 3 experimental NN, which were for asteroid detection, satellite component detection, and space debris detection achieved a lot lower accuracy. I tried many things to increase the performance of these NN’s, including various normalization techniques and increasing/decreasing model complexity, but they didn’t help too much. For all 3 programs, the validation dataset accuracy was a lot less than the testing dataset accuracy, which could mean that the models are overfitting. After decreasing model complexity, the results still remained the same, so I’m thinking that these accuracy discrepancies might have to do with dataset issues, especially because Google Images does not produce the most accurate datasets.  
 However, I still had so much fun trying to apply the NN towards these experimental industry-related applications, and it was cool comparing the performances of one with the other. Perhaps with more accurate datasets that are larger, some of the model accuracies can increase. Similarly, I could experiment more with various forms of uncertainty quantification and normalization for these 3 experimental applications. 
+
 With regards to validating the bounds of the NN, many of the datasets (as a result of being from Google Images) contained images that may not have belonged to the category, which hopefully helps the NN when it sees images that may not be very similar to the “dictionary image” of what that object may look like. In contrast, datasets like CIFAR allow the NN to become more confident when it sees an image similar to ones it used for training. 
+
 Nonlinearity in the NNs was introduced through the activation functions, which allows the model to make more intricate distinctions between different features. The relu activation functions specifically changes negative values to zero, which assists the model in understanding complexities in the image data. The output layers in the NNs were either softmax or sigmoid activation functions. Softmax functions work by converting output scores into probability distributions for all the classes, whereas sigmoid functions work by turning the output by “squashing” outputs into a range between 0 and 1. All of these activation functions work together to introduce nonlinearity and improve accuracy/decrease loss. 
+
 For the multiclass NNs (which were all the programs except binary classification), cross entropy loss was used by the NNs to optimize the model. The overarching objective of the model is to minimize the cross-entropy loss, and it does this by computing gradients from the loss function and using that gradient to adjust the weights and biases of the different nodes and layers. The addition of a dropout layer creates regularization, which helps prevent overfitting that may result from computations in the loss function. 
 
 
