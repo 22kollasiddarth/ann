@@ -69,7 +69,7 @@ programs and a sigmoid activation function for the binary classification program
 serves as the neural network&#39;s decisive component, as this layer determines what class the image
 belongs to.
 
-  - **bii. Uncertainty Quantification:** There were a few methods of uncertainty quantification, like Bayesian
+  - **bii. Uncertainty Quantification:** A few methods of uncertainty quantification, like Bayesian
 Networks and Ensemble models, were initially used but ultimately not implemented because they
 did not provide a lot of accuracy improvement. Instead, in their current state, the NNs use dropout to
 drop some inputs during training so that there is increased randomness. This allows the model to learn
