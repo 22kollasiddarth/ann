@@ -52,7 +52,7 @@ Nonlinearity in the NNs was introduced through the activation functions, which a
 
 For the multiclass NNs (which were all the programs except binary classification), cross-entropy loss was used to optimize the NN models. The overarching objective of the model is to minimize the cross-entropy loss, and it does this by computing gradients from the loss function and using that gradient to adjust the weights and biases of the different nodes and layers. The addition of a dropout layer creates regularization, which helps prevent overfitting that may result from computations in the loss function. 
 
-Overall, this entire process was such an amazing introduction to Neural Networks and their many applications. While building the NNs themselves was tough, looking back, I learned so much and gained many insights into ML/AI. 
+Overall, this entire process was such an amazing introduction to Neural Networks and their many applications. While building the NNs themselves was tough, looking back, I learned so much and gained many insights into ML/AI. Hopefully, I can use what I learned for classes, jobs, and even personal projects in the future!
 
 
 
